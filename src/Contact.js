@@ -12,7 +12,7 @@ export default function Contact() {
     e.preventDefault();
     setSent(true);
     try {
-      await axios.post(`${process.env.REACT_APP_BACK_END_URL}/send_mail`, {
+      await axios.post(`${REACT_APP_BACK_END_URL}send_mail`, {
         name,
         email,
         subject,
