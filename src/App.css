@@ -1,0 +1,394 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  z-index: 3;
+}
+/* Brackets go out */
+div.brackets a:before,
+div.brackets a:after {
+  position: relative;
+  opacity: 0;
+  font-size: 20px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+div.brackets a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+div.brackets a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+div.brackets a:hover:before,
+div.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* hero */
+.move-down {
+  margin-top: 200px;
+  padding-top: 40px;
+}
+div.move-down-about {
+  margin: 800px 0 0;
+  padding: 0;
+}
+.mywork {
+  margin-bottom: 100px;
+}
+.title h1 {
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  /* Styling the text and giving it gradient */
+  color: #ffffff;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+
+  /* Make sure text is in-front of background images */
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(../src/img/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(../src/img/twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(../src/img/clouds.png) repeat top center;
+  z-index: 2;
+  opacity: 0.4;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/* ANIMATION */
+/* @-webkit-keyframes glow {
+  0% {
+    text-shadow: 0 0 2px cyan;
+  }
+  50% {
+    text-shadow: 0 0 16px cyan;
+  }
+  100% {
+    text-shadow: 0 0 2px cyan;
+  }
+} */
+.nav-link {
+  color: #eee;
+  z-index: 4;
+}
+.dark-hero {
+  /* font-family: "Prosto One"; */
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+}
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 700px;
+  opacity: 0.5;
+}
+.center {
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  /* margin: auto; */
+}
+.h-container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.h-container p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}
+/* .typed-text {
+  font-weight: normal;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+} */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.image {
+  max-width: 60px;
+  max-height: 50px;
+}
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+.tech-logo {
+  text-align: center;
+}
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+/* .hero{
+position: relative;
+}
+.hero-overlay{
+position: absolute;
+} */
+
+/* About me card  */
+.co {
+  color: #fff;
+}
+#about {
+  background-color: black;
+  display: flex;
+}
+.work {
+  background-color: black;
+  color: #fff;
+}
+p {
+  margin: 0;
+}
+.card {
+  height: 85%;
+  width: 80%;
+  display: flex;
+}
+.about-info {
+  height: 90%;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  max-height: 400px;
+}
+.skill-mf {
+  padding-top: 50px;
+}
+.title-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+.pad {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+/* 
+/* Portfolio cards css */
+btn {
+  margin: 0;
+}
+/* modal */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modalContainer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
+}
+.m-img {
+  width: 250px;
+  object-fit: cover;
+}
+.modalRight {
+  width: 100%;
+}
+.closeBtn {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+/* media queries */
+@media screen and (max-width: 450px) {
+  .modalContainer {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100vh;
+  }
+  .m-img {
+    width: 100%;
+  }
+  .about-info {
+    max-height: 750px;
+  }
+}
+@media screen and (max-width: 400px) {
+  * {
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*  img hover */
+.img-zoom-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.img-zoom-container Img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.img-zoom-container:hover Img {
+  transform: scale(1.25);
+}
+
+/* circle button */
+
+.work-button {
+  font-size: 1.5rem;
+  border: 2px solid blue;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 10% auto;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon {
+  position: relative;
+  top: 40%;
+
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* //Hover
+//----------------------- */
+.work-button:hover {
+  width: 125px;
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  color: blue;
+  transition: 0.3s;
+}
+
+.work-button:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.05s;
+}
+
+/* .inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.5);
+} */
+/* contact form */
+.dark-contact {
+  font-family: "Prosto One";
+  background-color: black;
+  margin: 0 0 0 0;
+  color: #eee;
+}
+.button-rounded {
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+/* media query */
+@media only screen and (min-width: 768px) {
+  .pad {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .pad {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}

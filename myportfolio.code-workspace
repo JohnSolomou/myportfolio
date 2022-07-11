@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "myportfolio",
+		"path": ".."
+	},
+	{
+		"name": "backend",
+		"path": "..\\..\\react-portfolio\\backend"
+	}
+],
+  "settings": {}
+}
