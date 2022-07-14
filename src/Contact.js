@@ -12,12 +12,15 @@ export default function Contact() {
     e.preventDefault();
     setSent(true);
     try {
-      await axios.post(`${process.env.REACT_APP_BACK_END_URL}/send_mail`, {
-        name,
-        email,
-        subject,
-        message,
-      });
+      await axios.post(
+        `https://sheltered-inlet-00725.herokuapp.com/send_mail`,
+        {
+          name,
+          email,
+          subject,
+          message,
+        }
+      );
     } catch (error) {
       console.log(error);
     }
