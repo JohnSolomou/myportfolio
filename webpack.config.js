@@ -6,15 +6,13 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const env = config().parsed;
 const envKeys = Object.keys(env).reduce((prev, next) => {
-  prev[`${next}`] = JSON.stringify(env[next]);
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
   return prev;
 }, {});
 
 module.exports = {
   mode: "development",
-  devServer: {
-    contentBase: "./public",
-  },
+
   entry: "./src/index.js",
 
   output: {
