@@ -29,10 +29,13 @@ module.exports = {
     host: "127.0.0.1",
   },
 
-  // plugin: [new MiniCssExtractPlugin()],
   plugins: [
-    new HTMLWebpackPlugin({ template: "./public/index.html" }),
+    new HTMLWebpackPlugin({
+      template: "./public/index.html",
+      favicon: "./public/favicon-32x32.ico",
+    }),
     new MiniCssExtractPlugin(),
+
     // new Dotenv(),
     // new DefinePlugin(envKeys),
     // new Dotenv({
