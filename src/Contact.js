@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-console.log(process.env);
+
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [name, setName] = useState("");
