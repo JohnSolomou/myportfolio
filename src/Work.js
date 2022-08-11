@@ -5,11 +5,13 @@ import ToDo from "./img/ToDo.png";
 import bh from "./img/bh.png";
 import quiz2 from "./img/quiz2.jpg";
 import Quizzzy from "./img/Quizzzy.png";
+import cp from "./img/chesterpizza.png";
 import ModalRoot from "./modals/components/ModalRoot";
 import ModalService from "./modals/Services/ModalService";
 import QuizzzyModal from "./components/QuizzzyModal";
 import BHRecipeModal from "./components/BHRecipeModal";
 import ReactQuizModal from "./components/ReactQuizModal";
+import chesterpizza from "./components/Chesterpizza";
 import ToDoModal from "./components/ToDoModal";
 import { Card, Badge } from "react-bootstrap";
 
@@ -35,6 +37,42 @@ function Work() {
         </h2>
         <div className=" row align-items-center  pad justify-content-between ">
           <ModalRoot />
+
+          <Card
+            className="work-img img-zoom-container pb "
+            style={{ width: "18rem", marginBottom: "40Px" }}
+          >
+            {" "}
+            <Badge>comiing soon </Badge>
+            <a
+              href="https://shrouded-dawn-00073.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Card.Img variant="top" src={cp} className="img-fluid" />
+            </a>
+            <Card.Body className="container center">
+              <Card.Title style={{ color: "black" }}>
+                Chester Pizza<Badge pill> Comming soon </Badge>
+              </Card.Title>
+
+              <div>
+                <div className="work-button">
+                  <div className="icon">
+                    <div
+                      style={{
+                        color: "blue",
+                        cursor: "pointer",
+                      }}
+                      onClick={addModal}
+                    >
+                      +
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
 
           <Card
             className="work-img img-zoom-container pb "
