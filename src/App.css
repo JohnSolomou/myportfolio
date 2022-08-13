@@ -140,16 +140,17 @@ div.brackets a:hover:after {
   /* font-family: "Prosto One"; */
   background-color: black;
   color: whitesmoke;
-  margin: 0;
+
+  /* z-index: -10; */
 }
-.hero-img {
+/* .hero-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   height: 700px;
   opacity: 0.5;
-}
+} */
 .center {
   padding-top: 2rem;
   text-align: center;
@@ -231,9 +232,9 @@ position: absolute;
 #work {
   color: #fff;
 }
-a {
+/* a {
   color: whitesmoke;
-}
+} */
 p {
   margin: 0;
 }
@@ -249,6 +250,10 @@ p {
   text-align: left;
   max-height: 1200px;
 }
+/* .footer {
+  margin: 100vw;
+  z-index: 10;
+} */
 
 .title-s {
   font-weight: 600;
@@ -411,3 +416,8 @@ btn {
     padding-bottom: 100px;
   }
 }
+/* .container2 {
+  position: relative;
+  top: 380px;
+  z-index: 10;
+} */

@@ -8,7 +8,7 @@ function Footer() {
       {/* Grid container  */}
       <div className="container p-4 pb-0">
         {/* Section: Social media */}
-        <section className="mb-4">
+        <section className="mb-4 container2">
           {/* <!-- Facebook --> */}
 
           {/* <!-- Linkedin --> */}
