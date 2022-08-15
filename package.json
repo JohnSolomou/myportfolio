@@ -25,6 +25,7 @@
     "react-typewriter-effect": "^1.1.0"
   },
   "devDependencies": {
+    "source-map-loader": "^1.0.0",
     "@babel/core": "^7.18.6",
     "@babel/plugin-transform-runtime": "^7.18.6",
     "@babel/preset-env": "^7.18.6",

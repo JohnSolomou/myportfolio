@@ -62,6 +62,11 @@ module.exports = {
         options: { presets: ["@babel/env", "@babel/preset-react"] },
       },
       {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
+      {
         test: /\.css$/,
         use: [
           // {
