@@ -33,10 +33,10 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-            <Route exact path="/" component={Hero} />
-            <Route path="/about" component={About} />
-            <Route path="/work" component={Work} />
-            <Route path="/contact" component={Contact} />
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>
       </Router>
