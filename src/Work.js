@@ -11,7 +11,7 @@ import ModalService from "./modals/Services/ModalService";
 import QuizzzyModal from "./components/QuizzzyModal";
 import BHRecipeModal from "./components/BHRecipeModal";
 import ReactQuizModal from "./components/ReactQuizModal";
-import chesterpizza from "./components/Chesterpizza";
+// import chesterpizza from "./components/Chesterpizza";
 import ToDoModal from "./components/ToDoModal";
 import { Card, Badge } from "react-bootstrap";
 
@@ -30,9 +30,9 @@ function Work() {
     ModalService.open(ReactQuizModal);
   };
   return (
-    <div className="work  ">
-      <div className="container pad">
-        <h2 id="work" className="pad mywork center mt-5">
+    <div className="work pac">
+      <div className=" pad">
+        <h2 id="title" className="pad mywork center ">
           My Work
         </h2>
         <div className=" row align-items-center  pad justify-content-between ">

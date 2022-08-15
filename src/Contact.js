@@ -27,7 +27,7 @@ export default function Contact() {
   };
   return (
     <div className="pad dark-hero">
-      <h2 id="contact" className="center dark-hero pad ">
+      <h2 id="title" className="center dark-hero pad ">
         Contact
       </h2>
 

@@ -39,16 +39,16 @@ div.brackets a:hover:after {
 
 /* hero */
 .move-down {
-  margin-top: 200px;
+  margin-top: 150px;
   padding-top: 40px;
 }
-div.move-down-about {
+/* div.move-down-about {
   margin: 800px 0 0;
   padding: 0;
-}
-.mywork {
+} */
+/* .mywork {
   margin-bottom: 100px;
-}
+} */
 .title h1 {
   font-size: 36px;
   font-family: "Lato", sans-serif;
@@ -60,7 +60,7 @@ div.move-down-about {
   /* Styling the text and giving it gradient */
   color: #ffffff;
   background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 
@@ -132,6 +132,7 @@ div.move-down-about {
   }
 } */
 .nav-link {
+  background-color: black;
   color: #eee;
   z-index: 4;
 }
@@ -139,16 +140,17 @@ div.move-down-about {
   /* font-family: "Prosto One"; */
   background-color: black;
   color: whitesmoke;
-  margin: 0;
+
+  /* z-index: -10; */
 }
-.hero-img {
+/* .hero-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   height: 700px;
   opacity: 0.5;
-}
+} */
 .center {
   padding-top: 2rem;
   text-align: center;
@@ -214,11 +216,25 @@ position: absolute;
 #about {
   background-color: black;
   display: flex;
+  padding-bottom: 40px;
 }
-.work {
+.navbstrap {
+  text-decoration: none;
+  z-index: 5;
   background-color: black;
+  padding: 0;
+  color: white;
+}
+#title {
+  color: #fff;
+  padding-bottom: 30px;
+}
+#work {
   color: #fff;
 }
+/* a {
+  color: whitesmoke;
+} */
 p {
   margin: 0;
 }
@@ -228,23 +244,27 @@ p {
   display: flex;
 }
 .about-info {
-  height: 90%;
+  height: 95%;
   width: 100%;
   font-size: 20px;
   text-align: left;
-  max-height: 400px;
+  max-height: 1200px;
 }
-.skill-mf {
-  padding-top: 50px;
-}
+/* .footer {
+  margin: 100vw;
+  z-index: 10;
+} */
+
 .title-s {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
 }
 .pad {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  background-color: #000;
+
+  /* padding-top: 150px;
+  padding-bottom: 100px; */
 }
 /* 
 /* Portfolio cards css */
@@ -295,7 +315,9 @@ btn {
     width: 100%;
   }
   .about-info {
-    max-height: 750px;
+    max-height: 1600px;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -380,6 +402,8 @@ btn {
   color: #fff;
   transition: 0.4s;
 }
+/* footer */
+
 /* media query */
 @media only screen and (min-width: 768px) {
   .pad {
@@ -392,3 +416,8 @@ btn {
     padding-bottom: 100px;
   }
 }
+/* .container2 {
+  position: relative;
+  top: 380px;
+  z-index: 10;
+} */
