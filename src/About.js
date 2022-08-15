@@ -18,6 +18,7 @@ import github from "./img/github.svg";
 import postman from "./img/postman.png";
 import terminal from "./img/terminal.png";
 import sass from "./img/sass.svg";
+import axios from "axios";
 function About() {
   return (
     <div className="dark-hero ">
