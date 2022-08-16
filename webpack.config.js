@@ -27,7 +27,9 @@ module.exports = {
     hot: true,
     liveReload: true,
     host: "127.0.0.1",
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: "public/index.html",
+    },
   },
 
   plugins: [
