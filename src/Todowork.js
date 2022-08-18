@@ -3,7 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ToDo from "./img/ToDo.png";
 
-import Quizmodal from "./modals/Quizmodal";
+// import Quizmodal from "./modals/Quizmodal";
 import Todomodal from "./modals/Todomodal";
 
 function Work() {

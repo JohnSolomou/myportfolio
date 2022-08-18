@@ -257,6 +257,9 @@ p {
   margin: 100vw;
   z-index: 10;
 } */
+/* contactPad {
+  padding-bottom: 300px;
+} */
 
 .title-s {
   font-weight: 600;
@@ -395,7 +398,7 @@ btn {
   background-color: black;
   margin: 0 0 0 0;
   color: #eee;
-  padding-bottom: 120px;
+  padding-bottom: 400px;
 }
 .button-rounded {
   border-radius: 0.5rem;

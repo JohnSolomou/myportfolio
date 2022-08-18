@@ -38,7 +38,7 @@ export default function BHRecipeModal(props) {
           />
         </a>
         <button onClick={props.close} className="btn btn-primary">
-          Close Modal
+          Close
         </button>
       </ModalFooter>
     </Modal>

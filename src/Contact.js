@@ -31,14 +31,14 @@ export default function Contact() {
         Contact
       </h2>
 
-      <section className="dark-contact ">
+      <section className="dark-contact contactPad">
         <div className="container ">
           <div className="row ">
             <div className="col-sm-12">
               <div className="contact-mf">
                 <div id="contact" className="box-shadow-full">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 contactPad">
                       <div className="title-box-2">
                         <h5 className="title-left"> Send Me a Message</h5>
                       </div>

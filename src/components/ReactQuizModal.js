@@ -37,7 +37,7 @@ export default function ReactQuizModal(props) {
           />
         </a>
         <button onClick={props.close} className="btn btn-primary">
-          Close Modal
+          Close
         </button>
       </ModalFooter>
     </Modal>
