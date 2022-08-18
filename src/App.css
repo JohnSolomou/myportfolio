@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  overflow-x: hidden;
+}
 
 /* navbar */
 .navbar {
@@ -216,7 +219,7 @@ position: absolute;
 #about {
   background-color: black;
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 150px;
 }
 .navbstrap {
   text-decoration: none;
@@ -244,7 +247,7 @@ p {
   display: flex;
 }
 .about-info {
-  height: 95%;
+  height: 85%;
   width: 100%;
   font-size: 20px;
   text-align: left;
@@ -392,6 +395,7 @@ btn {
   background-color: black;
   margin: 0 0 0 0;
   color: #eee;
+  padding-bottom: 120px;
 }
 .button-rounded {
   border-radius: 0.5rem;

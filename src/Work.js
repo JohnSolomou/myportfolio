@@ -32,10 +32,10 @@ function Work() {
   return (
     <div className="work pac">
       <div className=" pad">
-        <h2 id="title" className="pad mywork center ">
+        <h2 id="title" className=" mywork center ">
           My Work
         </h2>
-        <div className=" row align-items-center  pad justify-content-between ">
+        <div className=" row align-items-center overflow-auto justify-content-between ">
           <ModalRoot />
 
           <Card
