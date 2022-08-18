@@ -18,7 +18,7 @@ import github from "./img/github.svg";
 import postman from "./img/postman.png";
 import terminal from "./img/terminal.png";
 import sass from "./img/sass.svg";
-import axios from "axios";
+
 function About() {
   return (
     <div className="dark-hero ">
@@ -46,37 +46,17 @@ function About() {
                       <div>
                         <div className="about-me title-s">About me</div>
                         <div style={{ color: "black" }}>
-                          years of experience in developing and designing user
-                          friendly, cross browser complaint web sites, and User
-                          Interface (UI) applications using HTML5, CSS3,
-                          Bootstrap, JavaScript, Node.js and React.js. •
-                          Developed user interface by using the React.js SPA
-                          development and used React-Router to turn it into
-                          Single Page Application (SPA). • Strong experience in
-                          Client Side designing and validations using HTML, CSS
-                          and JavaScript. • Used HTML5 elements like video,
-                          audio and canvas in making the website interactive. •
-                          Design developer and test HTML5, CSS3, JavaScript and
-                          React.JS that meets accessibility and web browser
-                          standards for website. • Experience in configuring,
-                          deployment and support of cloud services including
-                          Confidential Web Services (AWS). • Proficient in
-                          developing Single Page Applications (SPA) using
-                          React.JS and NodeJS. • Extensively worked with Version
-                          Control Systems like Perforce, GIT and Github • Good
-                          practice with the Node.JS application in building the
-                          minified versions. • Experienced in Agile
-                          Methodologies and SCRUM Process. • Experience in
-                          database development skills like Postgre SQL. •
-                          Experienced in using version control tools GIT to keep
-                          track of development stages and deployment stage. •
-                          Used the best practices of SDLC as well as
-                          Agile/Scrum, methodologies. • Hands on experience in
-                          using React.JS with ES6 features to develop reusable
-                          components and using Redux to enable predictable state
-                          change and improve maintainability of the code. •
-                          Excellent interpersonal abilities, Communication
-                          skills, time management and team skills.
+                          <div>
+                            years of experience in developing and designing user
+                            friendly, cross browser complaint web sites, and
+                            User Interface (UI) applications using HTML5, CSS3,
+                            Bootstrap, JavaScript, Node.js and React.js.{" "}
+                          </div>
+                          <div>
+                            Developed user interface by using the React.js SPA
+                            development and used React-Router to turn it into
+                            Single Page Application (SPA).
+                          </div>
                         </div>
                       </div>
                     </div>

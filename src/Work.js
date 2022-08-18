@@ -43,7 +43,7 @@ function Work() {
             style={{ width: "18rem", marginBottom: "40Px" }}
           >
             {" "}
-            <Badge>comiing soon </Badge>
+            <Badge>coming soon </Badge>
             <a
               href="https://shrouded-dawn-00073.herokuapp.com/"
               target="_blank"
@@ -53,7 +53,7 @@ function Work() {
             </a>
             <Card.Body className="container center">
               <Card.Title style={{ color: "black" }}>
-                Chester Pizza<Badge pill> Comming soon </Badge>
+                Chester Pizza<Badge pill> Coming soon </Badge>
               </Card.Title>
 
               <div>
