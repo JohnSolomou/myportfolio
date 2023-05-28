@@ -37,34 +37,34 @@ function Work() {
         </h2>
         <div className=" row align-items-center overflow-auto justify-content-between ">
           <ModalRoot />
-
           <Card
-            className="work-img img-zoom-container pb "
+            className="work-img img-zoom-container pb"
             style={{ width: "18rem", marginBottom: "40Px" }}
           >
-            {" "}
-            <Badge>coming soon </Badge>
             <a
-              href="https://shrouded-dawn-00073.herokuapp.com/"
+              href="https://quizzzy-45030.web.app/"
               target="_blank"
               rel="noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
             >
-              <Card.Img variant="top" src={cp} className="img-fluid" />
+              <Card.Img
+                style={{ maxHeight: 131 }}
+                variant="top"
+                src={quiz2}
+                className="img-fluid"
+              />
             </a>
             <Card.Body className="container center">
               <Card.Title style={{ color: "black" }}>
-                Chester Pizza<Badge pill> Coming soon </Badge>
+                netflix Admin <Badge pill>Coming Soon</Badge>
               </Card.Title>
 
-              <div>
+              <div className=" col">
                 <div className="work-button">
                   <div className="icon">
                     <div
-                      style={{
-                        color: "blue",
-                        cursor: "pointer",
-                      }}
-                      onClick={addModal}
+                      style={{ color: "blue", cursor: "pointer" }}
+                      onClick={addModal4}
                     >
                       +
                     </div>
@@ -78,6 +78,8 @@ function Work() {
             className="work-img img-zoom-container pb "
             style={{ width: "18rem", marginBottom: "40Px" }}
           >
+            {" "}
+            <Badge>coming soon </Badge>
             <a
               href="https://mighty-retreat-41731.herokuapp.com/index.html"
               target="_blank"
@@ -112,6 +114,8 @@ function Work() {
             className="work-img img-zoom-container pb"
             style={{ width: "18rem", marginBottom: "40Px" }}
           >
+            {" "}
+            <Badge>coming soon </Badge>
             <a
               href="https://bhrecipe.herokuapp.com/"
               target="_blank"

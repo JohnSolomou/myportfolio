@@ -1,10 +1,13 @@
 {
+  "homepage": "http://johnSolomou.github.io/myportfolio",
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "this is a portfolio to showcase my work",
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack ."
   },
   "author": "",
@@ -34,6 +37,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "dotenv-webpack": "^8.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "source-map-loader": "^1.0.0",
