@@ -81,7 +81,7 @@ function Work() {
             style={{ width: "18rem", marginBottom: "40Px" }}
           >
             <a
-              href="https://master--bespoke-taffy-e64bfd.netlify.app/"
+              href="https://john-solomou-bhrecipe.netlify.app/"
               target="_blank"
               rel="noreferrer"
               style={{ color: "white", textDecoration: "none" }}
